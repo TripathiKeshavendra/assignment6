@@ -1,0 +1,18 @@
+h1{
+    padding-top: 10px;
+    padding-bottom:10px ;
+    font-size: 40px;
+    border-radius: 10px;
+    color: #FFD95A;
+    background-color: #4C3D3D;
+    text-align: center;   
+}
+#attempt{
+    text-align: center;
+    font-size: 50px;
+    color: blueviolet;
+}
+#guessed_num{
+    text-align: center;
+    font-size: 30px;
+}

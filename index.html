@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asgn6.css">
+</head>
+<body>
+    <div>
+        <h1>GUESS THE NUMBER</h1>
+    </div>
+    <div>
+        <button onclick="printnum()" style="position: relative;left: 565px; background-color: darkgray; color: white;">START THE GAME</button>
+    </div>
+    <h2 id="attempt"></h2>
+    <h2 id="guessed_num"></h2>
+    <script>
+        function printnum(){
+           var num=prompt("enter the number between 1 and 100")
+            document.getElementById("attempt").innerHTML=num
+        for(let i=0;i<=5;i++){
+           var guessnum=Math.floor(Math.random()*100)+1;
+           document.getElementById("guessed_num").innerHTML=guessnum
+           document.write("<h2>")
+           document.write(guessnum);
+           document.write("</h2>")
+           if(num==guessnum){
+            document.write("Computer have guessed the number");
+            document.write("you lost try again");
+            break
+           }
+           else{
+            document.write("Computer is unable to guess your number");
+            document.write("You won");
+           }
+        }
+    }
+    </script>
+</body>
+</html>
